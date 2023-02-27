@@ -1,0 +1,1 @@
+let shareIcon = document.querySelector("shareIcon");

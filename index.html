@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My new Bing - Learn more</title>
     <!-- fonts icon -->
     <script src="https://kit.fontawesome.com/3c350ae8f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- bing favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/bing/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/bing/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/bing/favicon-16x16.png">
+    <link rel="manifest" href="/bing/site.webmanifest">
 </head>
+    <script defer src="/bing.js"></script>
 <body>
     <div class="main-page">
         <!-- introduction section -->
@@ -35,7 +41,7 @@
                 <a href="#">See Examples</a>
                 <a href="#">Features</a>
                 <a href="#">FAQ</a>
-                <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <a id="shareIcon" href="#"><i class="fa-regular fa-share-from-square"></i></a>
             </div>
         </section>
         <!-- Bing Preview statement section -->
@@ -43,7 +49,7 @@
             <div class="bingPrev">
                 <i class="fa-solid fa-mobile"></i>
                 <p id="bingPrev__Text">The new Bing preview is now available on the Bing, Edge and Skype mobile apps</p>
-                <a id="learn__tag" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> &nbsp Learn More</a>
+                <a id="learn__tag" href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="margin: 0 7 4 0; font-size: 12px;"></i>Learn More</a>
             </div>
             <!-- close icon -->
             <div id="close__icon">
@@ -57,6 +63,18 @@
             <p id="statTag"><i class="fa-solid fa-check"></i> You are in! Welcome to the new Bing!</p>
             <button id="goto__Button">Set Microsoft defaults</button>
         </section>
+
+        <div class="shareCard">
+            <p id="shareCard__heading">Share</p>
+            <p id="shareCard__msg">Introducing the new bing <a href="#">Copy link</a></p>
+            <div class="shareCard__icons">
+                <div class="shareIcon" id="facebook__icon"><a href="#"><span class="iconC"><i class="fa-brands fa-square-facebook"></i></span><span class="iconTexts">Facebook</span></a> </div>
+                <div class="shareIcon" id="twitter__icon"><a href="#"><span class="iconC"><i class="fa-brands fa-square-twitter"></i></span><span class="iconTexts">Twitter</span></a></div>
+                <div class="shareIcon" id="email-icon"><a href="#"><span class="iconC"><i class="fa-regular fa-envelope"></i></span><span class="iconTexts">Email</span></a></div>
+                <div class="shareIcon" id="pinterest__div"><a href="#"><span class="iconC" id="pinterest__icon"><i class="fa-brands fa-pinterest"></i></span><span class="iconTexts">Pinterest</span></a></div>
+            </div>
+        </div>
+
     </div>
     
     
