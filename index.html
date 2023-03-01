@@ -14,8 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/bing/favicon-16x16.png">
     <link rel="manifest" href="/bing/site.webmanifest">
 </head>
+        <!-- javascript link -->
     <script defer src="/bing.js"></script>
-<body>
+<body onclick="offdisplayShareCard()">
     <div class="main-page">
         <!-- introduction section -->
 
@@ -41,7 +42,7 @@
                 <a href="#">See Examples</a>
                 <a href="#">Features</a>
                 <a href="#">FAQ</a>
-                <a id="shareIcon" href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <a id="shareIcon__ctrl" onmouseover="displayShareCard()" href="#"><i class="fa-regular fa-share-from-square"></i></a>
             </div>
         </section>
         <!-- Bing Preview statement section -->
@@ -66,7 +67,7 @@
 
         <div class="shareCard">
             <p id="shareCard__heading">Share</p>
-            <p id="shareCard__msg">Introducing the new bing <a href="#">Copy link</a></p>
+            <p id="shareCard__msg" style="display: inline;">Introducing the new bing</p> <a id="copyLink" onclick="displayShareCard()" href="#">Copy link</a>
             <div class="shareCard__icons">
                 <div class="shareIcon" id="facebook__icon"><a href="#"><span class="iconC"><i class="fa-brands fa-square-facebook"></i></span><span class="iconTexts">Facebook</span></a> </div>
                 <div class="shareIcon" id="twitter__icon"><a href="#"><span class="iconC"><i class="fa-brands fa-square-twitter"></i></span><span class="iconTexts">Twitter</span></a></div>

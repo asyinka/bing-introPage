@@ -186,7 +186,7 @@ body{
     margin-bottom: 20px;
     font-size: 20px;
 }
-#shareCard__msg a{
+#copyLink {
     float: right;
     text-decoration: solid;
 }
@@ -225,6 +225,10 @@ body{
     font-size: 14px;
     text-decoration: none;
 }
+#shareIcon__ctrl:hover{
+    color: #000;
+}
+
 /* .shareCard__icons{
     margin: 30px 20px 20px 20px;
     
