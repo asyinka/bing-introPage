@@ -16,7 +16,8 @@
 </head>
         <!-- javascript link -->
     <script defer src="/bing.js"></script>
-<body onclick="offdisplayShareCard()">
+<body>     
+    <!-- onclick="offdisplayShareCard()" -->
     <div class="main-page">
         <!-- introduction section -->
 
@@ -42,7 +43,7 @@
                 <a href="#">See Examples</a>
                 <a href="#">Features</a>
                 <a href="#">FAQ</a>
-                <a id="shareIcon__ctrl" onmouseover="displayShareCard()" href="#"><i class="fa-regular fa-share-from-square"></i></a>
+                <a id="shareIcon__ctrl" onmouseover="displayShareCard()" onmouseout="offdisplayShareCard()" href="#"><i class="fa-regular fa-share-from-square"></i></a>
             </div>
         </section>
         <!-- Bing Preview statement section -->
@@ -65,7 +66,7 @@
             <button id="goto__Button">Set Microsoft defaults</button>
         </section>
 
-        <div class="shareCard">
+        <div class="shareCard" onmouseover="displayShareCard()" onmouseleave="offdisplayShareCard()">
             <p id="shareCard__heading">Share</p>
             <p id="shareCard__msg" style="display: inline;">Introducing the new bing</p> <a id="copyLink" onclick="displayShareCard()" href="#">Copy link</a>
             <div class="shareCard__icons">
@@ -77,7 +78,6 @@
         </div>
 
     </div>
-    
     
 </body>
 </html>

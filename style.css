@@ -121,6 +121,7 @@ body{
     padding-top: 20px;
     position: absolute;
     right: 20px;
+    cursor: pointer;
 }
 .purposeSect{
     text-align: center;
